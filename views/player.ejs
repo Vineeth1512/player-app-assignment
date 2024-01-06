@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Player Details</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="cricket-card">
+      <div id="main">Player Details</div>
+      <img src="<%=player.image %>" alt="<%= player.name %>" />
+      <p id="name">Name: <%= player.name %>
+      </p>
+      <p id="name">Team: <%= player.team %>
+      </p>
+
+      <p id="type">
+        <%= player.type %>
+      </p>
+    </div>
+
+    <div id="jersey-no">Jersey No:
+      <div id="jersey-icon">
+        <%= player.jerseyNo %>
+      </div>
+    </div>
+
+    <div class="stats">
+      <p id="centuries"> Centuries: <%= player.centuries %>
+      </p>
+      <p id="half-centuries">Half-Centuries: <%= player.halfCenturies %>
+      </p>
+
+    </div>
+    <button id="next-button"><a href="/nextPlayer">Next Player</a></button>
+  </div>
+  <!-- <h1>Player Details</h1>
+  <img src="<%=player.image %>" alt="<%= player.name %>" />
+  <p>Name: <%= player.name %>
+  </p>
+  <p>Age: <%= player.age %>
+  </p>
+  <p>Team : <%=player.team %> -->
+
+  <!-- Add other player details as needed -->
+  <!-- <a href="/nextPlayer">Next Player</a> -->
+</body>
+
+</html>

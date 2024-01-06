@@ -1,0 +1,218 @@
+body {
+
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #222;
+    min-height: 100vh;
+    min-width: 100vw;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #333;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.cricket-card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+
+}
+
+#main {
+
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.cricket-card img {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.25;
+
+}
+
+.cricket-card img:hover {
+
+    transform: scale(1.1);
+    background: #4077ff;
+}
+
+.cricket-card p {
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Poppins', sans-serif";
+    color: white;
+
+}
+
+#jersey-no {
+
+    font-size: 18px;
+    color: #999;
+    margin-left: -6vw;
+     margin-bottom: 2vw; 
+    margin-top: 3vw;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+#jersey-icon {
+
+    width: 20px;
+    height: 28px;
+    background: #666;
+    position: absolute;
+    margin-left: 12vw;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+
+#jersey-icon::before {
+    content: "";
+    position: absolute;
+    top: 2%;
+    left: -5px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 12px;
+    background: #666;
+    border-radius: 1px;
+    transform: rotate(55deg);
+}
+
+
+#jersey-icon::after {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 21px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 12px;
+    background: #666;
+    border-radius: 1px;
+    transform: rotate(55deg);
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: 18px;
+    margin-top: 1vw;
+
+}
+.stats p {
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Poppins', sans-serif";
+    color: white;
+}
+
+#half-centuries {
+    margin-left: 5vw;
+}
+
+#next-button {
+    font-family: 'Poppins', sans-serif;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 2vw;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #0077FF;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: border-color 0.25;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 80px;
+}
+#next-button:hover {
+    border-color: #0055CC;
+}
+
+#next-button:active {
+    border-color: #004C99;
+}
+
+#next-button:focus {
+    outline: none;
+}
+
+#next-button.animated {
+    animation: borderAnimation 1s infinite;
+}
+
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #0077FF;
+    }
+
+    50% {
+        border-color: #0055CC;
+    }
+
+    100% {
+        border-color: #0077FF;
+    }
+}
